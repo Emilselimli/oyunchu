@@ -1,0 +1,15 @@
+OYUNÇU ÜST PANELİ İNTEQRASİYASI
+
+Admin ayarları es_settings cədvəlində saxlanır.
+JSON endpoint:
+  /telesmartadmin/oyunchu/oyunchu_header_api.php
+
+Frontend header bu endpoint-dən ayarları oxumalıdır.
+Əsas qayda:
+- oyunchu_header_show_text = 0 olduqda loqonun yanında "Oyunçu" kimi mətn göstərilməməlidir.
+- oyunchu_header_mobile_text = 0 olduqda mobil versiyada da mətn gizli qalır.
+- menyu adları və rənglər API-dən gəlir.
+- loqo oyunchu_logo setting-indən gəlir.
+
+Bu arxivdə yalnız telesmartadmin hissəsi var; /games/oyunchu frontend faylları yoxdur.
+Ona görə API və admin idarəetməsi hazırlanıb, lakin frontend header/mobile HTML fayllarına birbaşa dəyişiklik edilə bilməz.
